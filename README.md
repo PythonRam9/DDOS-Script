@@ -1,1 +1,1 @@
-# DDOS-Script
+This is a script I made for fun. Please note that I do not advise you to run this script against other people's sites if you do not have permission as that would be illegal. I personally have only used this script on a friend's site with permission. Your actions are Your responsibility ... Enjoy!
